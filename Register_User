@@ -1,0 +1,14 @@
+from selenium import webdriver
+import pandas as pd
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+
+from selenium.webdriver.support import expected_conditions as EC
+
+service = Service(r"C:\Drivers\chromedriver-win64\chromedriver-win64\chromedriver.exe")
+options = webdriver.ChromeOptions()
+
+driver = webdriver.Chrome(service=service, options=options)
+driver.get("https://dbx92nph6l84n.cloudfront.net")
+driver.implicitly_wait(1900)
+driver.maximize_window()

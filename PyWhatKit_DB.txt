@@ -1,0 +1,40 @@
+Date: 30/10/2024
+Time: 13:18
+Phone Number: +919884319892
+Message: Sample message 1
+--------------------
+Date: 30/10/2024
+Time: 13:20
+Phone Number: +919884319892
+Message: Sample message 1
+--------------------
+Date: 30/10/2024
+Time: 13:21
+Phone Number: +919884319892
+Message: Sample message 1
+--------------------
+Date: 30/10/2024
+Time: 13:21
+Phone Number: +918778000401
+Message: Send sample message 2
+--------------------
+Date: 30/10/2024
+Time: 13:21
+Phone Number: +918148725764
+Message: Testing sample 1
+--------------------
+Date: 30/10/2024
+Time: 13:25
+Phone Number: +919884319892
+Message: Sample message 1
+--------------------
+Date: 30/10/2024
+Time: 13:25
+Phone Number: +918778000401
+Message: Send sample message 2
+--------------------
+Date: 30/10/2024
+Time: 13:26
+Phone Number: +918148725764
+Message: Testing sample 1
+--------------------

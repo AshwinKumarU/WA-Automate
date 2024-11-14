@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-10-30T13:12:43.368048" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify the default view of rooms in mylist" source="c:\Users\91978\Desktop\WA Automate\Verify the default view of rooms in mylist.robot">
+<test id="s1-t1" name="Login" line="18">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T13:12:45.324418" level="INFO">Opening browser 'chrome' to base url 'https://web.whatsapp.com'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T13:12:45.324418" elapsed="2.575129"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T13:12:47.899547" elapsed="0.054778"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-30T13:12:47.958340" elapsed="0.006155"/>
+</kw>
+<status status="PASS" start="2024-10-30T13:12:45.324418" elapsed="2.641098"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-30T13:12:47.967647" elapsed="3.011757"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-30T13:12:50.979404" elapsed="3.003080"/>
+</kw>
+<status status="PASS" start="2024-10-30T13:12:45.324418" elapsed="8.659685"/>
+</test>
+<test id="s1-t2" name="Wait until title is Visible and input text" line="25">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-30T13:12:53.993480" level="INFO">Clicking element 'Xpath:/html/body/div[1]/div/div/div[2]/div[3]/header/header/div/span/div/span/div[1]/div/span'.</msg>
+<msg time="2024-10-30T13:13:02.463586" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-30T13:13:02.463586" level="FAIL">Element with locator 'Xpath:/html/body/div[1]/div/div/div[2]/div[3]/header/header/div/span/div/span/div[1]/div/span' not found.</msg>
+<arg>Xpath:${SearchPlusIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-30T13:12:53.989554" elapsed="8.485180">Element with locator 'Xpath:/html/body/div[1]/div/div/div[2]/div[3]/header/header/div/span/div/span/div[1]/div/span' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>XPath:${SEARCH_USER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.475282" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>None</arg>
+<arg>8790425929</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.475282" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${is_present}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=/html/body/div[1]/div/div/div[2]/div[2]/div[1]/span/div/span/div/div[2]/div[2]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.478293" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_present}</arg>
+<arg>Click Element</arg>
+<arg>Xpath:${VALID USER}</arg>
+<arg>ELSE</arg>
+<arg>Handle Element Not Found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.478293" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>Xpath:${VALID USER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.478293" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${TextInputBox}</arg>
+<arg>Some random test 2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.478293" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>Xpath:/html/body/div[1]/div/div/div[2]/div[4]/div/footer/div[1]/div/span/div/div[2]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-30T13:13:02.478293" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-30T13:12:53.987417" elapsed="8.490876">Element with locator 'Xpath:/html/body/div[1]/div/div/div[2]/div[3]/header/header/div/span/div/span/div[1]/div/span' not found.</status>
+</test>
+<doc>Verify the default card view of user cards</doc>
+<status status="FAIL" start="2024-10-30T13:12:43.375762" elapsed="19.110541"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Verify the default view of rooms in mylist">Verify the default view of rooms in mylist</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-30T13:12:45.315763" level="ERROR">Error in file 'c:\Users\91978\Desktop\WA Automate\Verify the default view of rooms in mylist.robot' on line 9: Importing library 'OpenPyxlLibrary' failed: ModuleNotFoundError: No module named 'OpenPyxlLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\91978\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\91978\Desktop\WA Automate
+  c:\Users\91978\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\91978\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Users\91978\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\91978\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\91978\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\91978\AppData\Local\Programs\Python\Python311
+  C:\Users\91978\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
